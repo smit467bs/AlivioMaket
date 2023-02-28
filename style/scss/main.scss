@@ -1,0 +1,20 @@
+@import "normalize.css";
+@import "top";
+@import "mixin/mixin";
+
+$mainFont: 'Lato', normal;
+$mainFontSize: 20px;
+$mainLineHeight: 24px;
+
+body {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  @include fontNormal();
+  font-size: 20px;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 16px;
+
+}

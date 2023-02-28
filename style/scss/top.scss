@@ -1,0 +1,76 @@
+@mixin fontNormal() {
+  font-family: 'Lato', normal, serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+
+.top {
+  display: flex;
+  width: 100vw;
+  height: 7.5vh;
+  justify-content: center;
+
+  .logo {
+    position: absolute;
+    top: 2.75%;
+    left: 14.25%;
+    width: 80px;
+    height: 23px;
+  }
+
+  .navigation {
+    position: absolute;
+    top: 1.1%;
+    left: 21%;
+
+    ul {
+      list-style: none;
+
+      li {
+        display: inline;
+        padding-left: 4.1vw;
+      }
+    }
+
+
+  }
+
+  .login {
+    position: absolute;
+    top: 1.5%;
+    left: 68%;
+    width: 400px;
+    height: 60px;
+
+    .noneButton {
+      position: absolute;
+      top: 26%;
+      right: 70%;
+
+      padding: 0;
+      margin: 0;
+      white-space: none;
+      border: none;
+      background-color: white;
+      font-family: 'Lato', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    .standartButton {
+      position: absolute;
+      top: 4%;
+      left: 39.5%;
+      @include fontNormal;
+      width: 9.5vw;
+      height: 4.5vh;
+      background: #01996D;
+      border: 1px solid #01996D;
+      border-radius: 4px;
+    }
+  }
+}
